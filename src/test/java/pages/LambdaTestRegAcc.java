@@ -12,9 +12,9 @@ public class LambdaTestRegAcc {
     By telephoneId = By.id("input-telephone");
     By passwordId = By.id("input-password");
     By confirmPasswordId = By.id("input-confirm");
-    By subscribeId = By.id("input-newsletter-yes");
+    //By subscribeId = By.id("input-newsletter-yes");
 
-    By checkBoxId = By.id("input-agree");
+    By checkBoxId = By.xpath("//label[@for='input-agree'] ");
 
     By contenButton = By.xpath("//input[@value='Continue']");
 
@@ -50,15 +50,14 @@ public class LambdaTestRegAcc {
         return this;
     }
 
-    public LambdaTestRegAcc subscribeRad () {
-        ldriver.findElement(subscribeId).click();
-        return this;
-    }
+//    public LambdaTestRegAcc subscribeRad () {
+//        ldriver.findElement(subscribeId).click();
+//        return this;
+//    }
 
     public  LambdaTestRegAcc clickChickBox() {
         ldriver.findElement(checkBoxId).click();
         return this;
-
     }
 
     public LambdaTestHomePage clickBotton(){

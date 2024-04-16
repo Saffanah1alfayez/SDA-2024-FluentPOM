@@ -21,18 +21,15 @@ public class LogInTestHW {
 
         LambdaTestRegAcc regAcc = new LambdaTestRegAcc(driver);
         regAcc.enterfirstname("Sara")
-                .enteremail("ali")
+                .enterlastname("ali")
                 .enteremail("sara@hotmail.com")
                 .entertelephone("0589468744")
                 .enterpassword("12345")
                 .confiemPassword("12345")
-                .subscribeRad()
                 .clickChickBox()
                 .clickBotton();
 
         LambdaTestHomePage homePage = new LambdaTestHomePage(driver);
         homePage.LambdaTestHomePage();
-
     }
-
 }
